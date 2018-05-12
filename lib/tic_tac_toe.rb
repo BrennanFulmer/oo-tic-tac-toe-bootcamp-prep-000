@@ -70,7 +70,7 @@ class TicTacToe
   end
   
   def draw?(board)
-    won?(board) == false && full?(board)
+    won? == false && full?(board)
   end
 
 =begin
