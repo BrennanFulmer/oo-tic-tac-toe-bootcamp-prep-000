@@ -86,19 +86,18 @@ class TicTacToe
     end
   end
 
-=begin
-def play(board)
-  until over?(board)
-    turn(board)
+  def play(board)
+    until over?(board)
+      turn(board)
+    end
+    letter = winner(board)
+    if letter != nil
+      puts "Congratulations #{letter}!"
+    else
+      puts "Cat's Game!"
+    end
   end
-  letter = winner(board)
-  if letter != nil
-    puts "Congratulations #{letter}!"
-  else
-    puts "Cat's Game!"
-  end
-end
-=end
+
 
 end
 
