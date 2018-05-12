@@ -49,20 +49,19 @@ class TicTacToe
     turn_count.even? ? "X" : "O" 
   end
 
-
-def won?(board)
-  result = false
-  WIN_COMBINATIONS.each do |set|
-    if board[set[0]] == "X" && board[set[1]] == "X" && board[set[2]] == "X"
-      result = set
-      break
-    elsif board[set[0]] == "O" && board[set[1]] == "O" && board[set[2]] == "O"
-      result = set
-      break
+  def won?(board)
+    result = false
+    WIN_COMBINATIONS.each do |set|
+      if board[set[0]] == "X" && board[set[1]] == "X" && board[set[2]] == "X"
+        result = set
+        break
+      elsif board[set[0]] == "O" && board[set[1]] == "O" && board[set[2]] == "O"
+        result = set
+        break
+      end
     end
+    result
   end
-  result
-end
 =begin
 def full?(board)
   filled = board.all? do |spot|
