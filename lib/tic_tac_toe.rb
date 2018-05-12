@@ -77,7 +77,7 @@ class TicTacToe
     won? != false || draw?
   end
   
-=begin
+
 def winner(board)
   outcome = won?(board)
   if outcome != false
@@ -87,6 +87,7 @@ def winner(board)
   end
 end
 
+=begin
 def play(board)
   until over?(board)
     turn(board)
