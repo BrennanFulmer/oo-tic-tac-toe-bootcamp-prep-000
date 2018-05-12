@@ -52,10 +52,10 @@ class TicTacToe
   def won?
     result = false
     WIN_COMBINATIONS.each do |set|
-      if board[set[0]] == "X" && board[set[1]] == "X" && board[set[2]] == "X"
+      if @board[set[0]] == "X" && @board[set[1]] == "X" && @board[set[2]] == "X"
         result = set
         break
-      elsif board[set[0]] == "O" && board[set[1]] == "O" && board[set[2]] == "O"
+      elsif @board[set[0]] == "O" && @board[set[1]] == "O" && @board[set[2]] == "O"
         result = set
         break
       end
