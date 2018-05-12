@@ -68,6 +68,7 @@ class TicTacToe
       spot != " " && spot != ""
     end
   end
+  
 =begin
 def draw?(board)
   won?(board) == false && full?(board)
