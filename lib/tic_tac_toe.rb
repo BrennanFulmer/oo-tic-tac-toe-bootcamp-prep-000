@@ -65,7 +65,7 @@ class TicTacToe
 
   def full?
     filled = @board.all? do |spot|
-      spot != " " && spot != ""
+      spot.strip != ""
     end
   end
   
