@@ -49,12 +49,12 @@ class TicTacToe
     turns
   end
 
-=begin
+
   def turn_count(board)
     board.count{|token| token == "X" || token == "O"}
   end
 
-
+=begin
 def current_player(board)
   turn_count(board).even? ? player = "X" : player = "O" 
 end
