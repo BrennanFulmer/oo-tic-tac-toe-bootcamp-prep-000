@@ -62,14 +62,13 @@ class TicTacToe
     end
     result
   end
-  
-=begin
-def full?(board)
-  filled = board.all? do |spot|
-    spot != " " && spot != ""
-  end
-end
 
+  def full?(board)
+    filled = board.all? do |spot|
+      spot != " " && spot != ""
+    end
+  end
+=begin
 def draw?(board)
   won?(board) == false && full?(board)
 end
