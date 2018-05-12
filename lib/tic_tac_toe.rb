@@ -37,12 +37,12 @@ class TicTacToe
       move(processed_input, current_player(board))
       display_board(board)
     else
-      turn(board)
+      turn
     end
   end
 
   def turn_count
-    board.count{ |chip| chip == "X" || chip == "O" }
+    @board.count{ |chip| chip == "X" || chip == "O" }
   end
 
 =begin
