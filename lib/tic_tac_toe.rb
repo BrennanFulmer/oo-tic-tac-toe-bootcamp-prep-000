@@ -78,14 +78,14 @@ class TicTacToe
   end
   
 
-def winner(board)
-  outcome = won?(board)
-  if outcome != false
-    board[outcome[0]]
-  else
-    nil
+  def winner(board)
+    outcome = won?(board)
+    if outcome != false
+      board[outcome[0]]
+    else
+      nil
+    end
   end
-end
 
 =begin
 def play(board)
