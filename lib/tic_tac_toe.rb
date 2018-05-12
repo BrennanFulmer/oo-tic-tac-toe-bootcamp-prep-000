@@ -29,7 +29,7 @@ class TicTacToe
     users_index.between?(0,8) && !position_taken?(users_index)
   end
 
-=begin
+
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
@@ -42,6 +42,7 @@ def turn(board)
   end
 end
 
+=begin
 def turn_count(board)
   turns = 0
   board.each do |spot|
