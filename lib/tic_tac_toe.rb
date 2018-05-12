@@ -41,7 +41,7 @@ class TicTacToe
     end
   end
 
-=begin
+
 def turn_count(board)
   turns = 0
   board.each do |spot|
@@ -50,6 +50,7 @@ def turn_count(board)
   turns
 end
 
+=begin
   def turn_count(board)
     board.count{|token| token == "X" || token == "O"}
   end
