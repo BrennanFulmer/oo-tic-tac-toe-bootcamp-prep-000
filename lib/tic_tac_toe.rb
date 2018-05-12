@@ -45,8 +45,8 @@ class TicTacToe
     @board.count{ |chip| chip == "X" || chip == "O" }
   end
 
-  def current_player(
-    turn_count(board).even? ? player = "X" : player = "O" 
+  def current_player
+    turn_count(@board).even? ? player = "X" : player = "O" 
   end
 
 =begin
