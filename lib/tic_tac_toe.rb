@@ -90,7 +90,7 @@ class TicTacToe
     until over?
       turn
     end
-    letter = winner(board)
+    letter = winner
     if letter != nil
       puts "Congratulations #{letter}!"
     else
