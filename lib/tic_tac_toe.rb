@@ -49,7 +49,7 @@ class TicTacToe
     turn_count.even? ? "X" : "O" 
   end
 
-=begin
+
 def won?(board)
   result = false
   WIN_COMBINATIONS.each do |set|
@@ -63,7 +63,7 @@ def won?(board)
   end
   result
 end
-
+=begin
 def full?(board)
   filled = board.all? do |spot|
     spot != " " && spot != ""
